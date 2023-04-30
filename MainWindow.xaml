@@ -1,0 +1,106 @@
+﻿<Window x:Class="DBaInstaller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Icon="icon.ico"
+        xmlns:local="clr-namespace:DBaInstaller"
+        mc:Ignorable="d"
+        Title="Установка ZRDB" Height="460" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="412*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Width="100"
+                Height="20"
+                Margin="7"
+                Click="ContinueButton_C">Продолжить</Button>
+        
+        <Button Grid.Row="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Width="100"
+                Height="20"
+                Margin="0,0,113,7"
+                Click="cancelButton_C">Отмена</Button>
+
+        <Grid x:Name="simpleGrid" Grid.Row="0">
+            
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="140"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Name="PanelGrid" Background="#B5B32B">
+                
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="220"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Background="#808C14"></Grid>
+                
+                <TextBlock Grid.Row="0" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_start"
+                           Foreground="White"
+                           Margin="15,0,0,0"
+                           >Начало установки</TextBlock>
+
+                <TextBlock Grid.Row="1" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_conf"
+                           
+                           Margin="15,0,0,0"
+                           >Конфигурация</TextBlock>
+
+                <TextBlock Grid.Row="2" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_path"
+                           Margin="15,0,0,0"
+                           >Настройка установки</TextBlock>
+
+                <TextBlock Grid.Row="3" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_install"
+                           Margin="15,0,0,0"
+                           >Установка</TextBlock>
+
+                <TextBlock Grid.Row="4" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_finish"
+                           Margin="15,0,0,0"
+                           >Завершение</TextBlock>
+
+            </Grid>
+            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,1,0,0"></Border>
+            <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1,1,1,0"></Border>
+
+            <TextBlock Grid.Column="1" FontWeight="Bold"
+                       Margin="10"
+                       FontSize="16">
+                Добро пожаловать в Мастер установки ZRDB</TextBlock>
+
+            
+        </Grid>
+
+        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1"></Border>
+    </Grid>
+
+</Window>

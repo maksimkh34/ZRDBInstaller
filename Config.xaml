@@ -1,0 +1,140 @@
+﻿<Window x:Class="DBaInstaller.Config"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBaInstaller"
+        mc:Ignorable="d"
+        Title="Установка ZRDB" Height="460" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="412*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Width="100"
+                Height="20"
+                Margin="7"
+                Click="continueButton_C">Продолжить</Button>
+
+        <Button Grid.Row="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Width="100"
+                Height="20"
+                Margin="0,0,113,7"
+                Click="returnButton_C">Закрыть</Button>
+
+        <Grid x:Name="simpleGrid" Grid.Row="0">
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="140"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Name="PanelGrid" Background="#B5B32B">
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="220"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="1" Background="#808C14"></Grid>
+
+                <TextBlock Grid.Row="0" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_start"
+                           
+                           Margin="15,0,0,0"
+                           >Начало установки</TextBlock>
+
+                <TextBlock Grid.Row="1" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_conf"
+                           Foreground="White"
+                           Margin="15,0,0,0"
+                           >Конфигурация</TextBlock>
+
+                <TextBlock Grid.Row="2" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_path"
+                           Margin="15,0,0,0"
+                           >Настройка установки</TextBlock>
+
+                <TextBlock Grid.Row="3" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_install"
+                           Margin="15,0,0,0"
+                           >Установка</TextBlock>
+
+                <TextBlock Grid.Row="4" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"
+                           Name="tb_finish"
+                           Margin="15,0,0,0"
+                           >Завершение</TextBlock>
+
+            </Grid>
+            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0,1,0,0"></Border>
+            <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1,1,1,0"></Border>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="130"></RowDefinition>
+                    <RowDefinition Height="95"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="1" FontWeight="Bold"
+                           Margin="10"
+                           FontSize="16">
+                    Конфигурация установки:</TextBlock>
+
+                <TextBlock Grid.Row="0" Margin="10,40,0,0">Выберите метод установки:</TextBlock>
+
+                <StackPanel x:Name="isUpdate_rb" Grid.Row="0" Margin="10,58,0,0">
+                    <RadioButton Name="iu1" GroupName="IsUpdating" Content="Установка" Margin="2" Checked="installRButton_C"/>
+                    <RadioButton Name="iu2" GroupName="IsUpdating" Content="Обновление" Margin="2" Checked="updateRButton_C"/>
+                    <Button Name="selectInstalledPath" Grid.Column="1" HorizontalAlignment="Stretch" 
+                            Click="selectInstalledPath_Click"
+                            Margin="2,5,10,0" IsEnabled="False">Выберите путь к установленной программе</Button>
+
+                </StackPanel>
+
+                <TextBlock Grid.Row="1" Margin="10,5,0,0">Выберите способ установки:</TextBlock>
+
+
+                <StackPanel x:Name="isLocal_rb" Grid.Row="1" Margin="10,25,0,0">
+                    <RadioButton Name="um1" GroupName="updatingMethod" Content="С сервера" Margin="2" Checked="updateServerRB_C"/>
+                    <RadioButton Name="um2" GroupName="updatingMethod" Content="Из файла" Margin="2" Checked="updateFileRB_C"/>
+                    <Button Name="selectInstallMethodButton" Grid.Column="1" HorizontalAlignment="Stretch" 
+                            Click="selectInstallMethodButton_C"
+                            Margin="2,5,10,0" IsEnabled="False">Выберите путь к файлу обновления</Button>
+
+                </StackPanel>
+
+                
+                
+                <Border Grid.Row="0" BorderBrush="Black" BorderThickness="0,1,1,1"></Border>
+                <Border Grid.Row="1" BorderBrush="Black" BorderThickness="0,0,1,1"></Border>
+
+            </Grid>
+            
+        </Grid>
+
+        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1"></Border>
+    </Grid>
+</Window>
