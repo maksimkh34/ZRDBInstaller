@@ -1,0 +1,20 @@
+﻿ZRDB Installer
+
+
+winexe
+C#
+.cs
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\
+ZRDB_Installer
+none
+false
+TRACE;RELEASE;NET;NET7_0;NETCOREAPP
+D:\Work\CSharp\DBaInstaller\App.xaml
+52095020890
+
+13-2095618205
+2381994646189
+Config.xaml;Finish.xaml;Installation.xaml;MainWindow.xaml;PathSelection.xaml;
+
+False
+

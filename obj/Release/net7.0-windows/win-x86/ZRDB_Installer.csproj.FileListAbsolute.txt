@@ -1,0 +1,97 @@
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ZRDB Installer.exe
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ZRDB Installer.dll.config
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ZRDB Installer.deps.json
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ZRDB Installer.runtimeconfig.json
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ZRDB Installer.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ZRDB Installer.pdb
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\EntityFramework.SqlServer.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\EntityFramework.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\Microsoft.Extensions.ObjectPool.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\SQLite-net.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\SQLitePCLRaw.batteries_v2.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\SQLitePCLRaw.nativelibrary.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\SQLitePCLRaw.core.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ComponentModel.Composition.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ComponentModel.Composition.Registration.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Data.Odbc.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Data.OleDb.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Data.SqlClient.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.DirectoryServices.AccountManagement.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.DirectoryServices.Protocols.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.IO.Ports.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Management.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Private.ServiceModel.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Reflection.Context.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Runtime.Caching.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ServiceModel.Duplex.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ServiceModel.Http.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ServiceModel.NetTcp.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ServiceModel.Primitives.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ServiceModel.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ServiceModel.Security.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ServiceModel.Syndication.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.ServiceProcess.ServiceController.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Speech.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Web.Services.Description.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\cs\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\de\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\es\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\fr\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\it\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ja\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ko\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\pl\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\pt-BR\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ru\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\tr\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\zh-Hans\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\zh-Hant\System.Private.ServiceModel.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\cs\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\de\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\es\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\fr\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\it\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ja\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ko\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\pl\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\pt-BR\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\ru\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\tr\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\zh-Hans\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\zh-Hant\System.Web.Services.Description.resources.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\sni.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\e_sqlcipher.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.DirectoryServices.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Security.Cryptography.Pkcs.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Security.Cryptography.ProtectedData.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Security.Cryptography.Xml.dll
+D:\Work\CSharp\DBaInstaller\bin\Release\net7.0-windows\win-x86\System.Threading.AccessControl.dll
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB_Installer.csproj.AssemblyReference.cache
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\Interop.IWshRuntimeLibrary.dll
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB_Installer.csproj.ResolveComReference.cache
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\Config.g.cs
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\Finish.g.cs
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\Installation.g.cs
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\MainWindow.g.cs
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\PathSelection.g.cs
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\App.g.cs
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB Installer_MarkupCompile.cache
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB Installer_MarkupCompile.lref
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\Config.baml
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\Finish.baml
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\Installation.baml
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\MainWindow.baml
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\PathSelection.baml
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB Installer.g.resources
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB_Installer.Properties.Resources.resources
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB_Installer.csproj.GenerateResource.cache
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB_Installer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB_Installer.csproj.CoreCompileInputs.cache
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB_Installer.csproj.CopyComplete
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB Installer.dll
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\refint\ZRDB Installer.dll
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB Installer.pdb
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ZRDB_Installer.genruntimeconfig.cache
+D:\Work\CSharp\DBaInstaller\obj\Release\net7.0-windows\win-x86\ref\ZRDB Installer.dll

@@ -1,0 +1,5 @@
+D:\Work\Releases\ZRDBInstaller\ZRDB Installer.pdb
+D:\Work\Releases\ZRDBInstaller\ZRDB Installer.dll.config
+D:\Work\Releases\ZRDBInstaller\sni.dll
+D:\Work\Releases\ZRDBInstaller\e_sqlcipher.dll
+D:\Work\Releases\ZRDBInstaller\ZRDB Installer.exe
