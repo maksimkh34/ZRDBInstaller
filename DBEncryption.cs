@@ -13,7 +13,7 @@ namespace DBaInstaller
     {
         public static void writePassword(string s1, string s2)
         {
-            RegistryKey lkey = Registry.LocalMachine;
+            RegistryKey lkey = Registry.CurrentUser;
             RegistryKey nkey = lkey.OpenSubKey("SOFTWARE", true);
             RegistryKey pass = nkey.CreateSubKey("ZRDB");
             pass.SetValue("p1", s1);
@@ -24,10 +24,9 @@ namespace DBaInstaller
 
         public static string[] getPasswords()
         {
-            RegistryKey lkey = Registry.LocalMachine;
+            RegistryKey lkey = Registry.CurrentUser;
             RegistryKey nkey = lkey.CreateSubKey("SOFTWARE", true);
-            RegistryKey pass2 = nkey.CreateSubKey("WOW6432Node");
-            RegistryKey pass = pass2.CreateSubKey("ZRDB");
+            RegistryKey pass = nkey.CreateSubKey("ZRDB");
             string s1 = pass.GetValue("p1").ToString();
             string s2 = pass.GetValue("p2").ToString();
             return new string[] { s1, s2 };

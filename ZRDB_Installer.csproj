@@ -11,6 +11,7 @@
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <StartupObject>DBaInstaller.App</StartupObject>
     <AssemblyName>ZRDB Installer</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.IO.Compression" />

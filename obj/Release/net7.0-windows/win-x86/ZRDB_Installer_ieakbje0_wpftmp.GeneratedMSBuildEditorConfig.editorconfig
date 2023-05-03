@@ -17,5 +17,5 @@ build_property.EnableAotAnalyzer =
 build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = 
 build_property.IncludeAllContentForSelfExtract = 
-build_property.RootNamespace = ZRDB_Installer
+build_property.RootNamespace = ZRDB_Installer_ieakbje0_wpftmp
 build_property.ProjectDir = D:\Work\CSharp\DBaInstaller\
