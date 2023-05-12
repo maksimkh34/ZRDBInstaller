@@ -8,7 +8,6 @@
         Title="Установка ZRDB" Height="460" Width="600"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        Loaded="Window_Loaded"
         Closed="Window_Closed">
     <Grid>
         <Grid.RowDefinitions>
@@ -102,12 +101,13 @@
                            FontSize="16">
                     Уставнока:</TextBlock>
 
-            <TextBlock Name="status_t" Grid.Column="1" FontSize="10"  Margin="10,40,0,0">Начинается процесс установки...</TextBlock>
+            <TextBlock Name="status_t" Grid.Column="1" FontSize="10"  Margin="10,40,0,0">Начало загрузки</TextBlock>
             
             <ProgressBar VerticalAlignment="Top" 
                          Margin="10,55,10,0"
                          Name="main_pb"
                          Grid.Column="1" Height="16" HorizontalAlignment="Stretch"></ProgressBar>
+            <Button Grid.Column="1" Margin="10,76,10,100" Height="20" VerticalAlignment="Top" Click="Button_Click">Загрузить</Button>
 
         </Grid>
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using IWshRuntimeLibrary;
 
 namespace DBaInstaller
 {
@@ -15,20 +16,6 @@ namespace DBaInstaller
 
         private void returnButton_C(object sender, RoutedEventArgs e)
         {
-            if ((bool)startDB_cb.IsChecked)
-            {
-                string path = "";
-                if ((bool)Application.Current.Properties["isUpdating"])
-                {
-                    path += Application.Current.Properties["updatingPath"];
-                }
-                else
-                {
-                    path += Application.Current.Properties["installingPath"];
-                }
-                path += "\\ZRDB.exe";
-                System.Diagnostics.Process.Start(path);
-            }
             Close();
         }
 

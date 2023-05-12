@@ -138,3 +138,4 @@ D:\Work\CSharp\DBaInstaller\obj\Debug\net7.0-windows\refint\ZRDB Installer.dll
 D:\Work\CSharp\DBaInstaller\obj\Debug\net7.0-windows\ZRDB Installer.pdb
 D:\Work\CSharp\DBaInstaller\obj\Debug\net7.0-windows\ZRDB_Installer.genruntimeconfig.cache
 D:\Work\CSharp\DBaInstaller\obj\Debug\net7.0-windows\ref\ZRDB Installer.dll
+D:\Work\CSharp\DBaInstaller\obj\Debug\net7.0-windows\Interop.Shell32.dll

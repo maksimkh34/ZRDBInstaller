@@ -14,7 +14,8 @@ namespace DBaInstaller
         public static void writePassword(string s1, string s2)
         {
             RegistryKey lkey = Registry.CurrentUser;
-            RegistryKey nkey = lkey.OpenSubKey("SOFTWARE", true);
+            RegistryKey nkey = lkey.OpenSubKey("Software", true);
+            if (nkey == null) { nkey = lkey.OpenSubKey("SOFTWARE", true); }
             RegistryKey pass = nkey.CreateSubKey("ZRDB");
             pass.SetValue("p1", s1);
             pass.SetValue("p2", s2);

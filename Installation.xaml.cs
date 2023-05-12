@@ -1,7 +1,11 @@
 ﻿using IWshRuntimeLibrary;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
+using System.Net.Http;
+using System.Security.Policy;
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace DBaInstaller
@@ -16,18 +20,17 @@ namespace DBaInstaller
             InitializeComponent();
         }
 
-        void Createlnk(string soucre)
+        void Createlnk(string source)
         {
-            string deskDir = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-
-            using (StreamWriter writer = new StreamWriter(deskDir + "\\ZRDB.url"))
-            {
-                writer.WriteLine("[InternetShortcut]");
-                writer.WriteLine("URL=file:///" + soucre);
-                writer.WriteLine("IconIndex=0");
-                string icon = soucre.Replace('\\', '/');
-                writer.WriteLine("IconFile=" + icon);
-            }
+            object shDesktop = (object)"Desktop";
+            WshShell shell = new WshShell();
+            string shortcutAddress = (string)shell.SpecialFolders.Item(ref shDesktop) + @"\ZRDB.lnk";
+            IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutAddress);
+            shortcut.Description = "ZRDB";
+            shortcut.Hotkey = "Ctrl+Shift+N";
+            shortcut.WorkingDirectory = source.Replace("\\ZRDB.exe","");
+            shortcut.TargetPath = source;
+            shortcut.Save();
         }
 
         private void continueButton_C(object sender, RoutedEventArgs e)
@@ -91,15 +94,20 @@ namespace DBaInstaller
 
         private void install()
         {
+            
+
             try
             {
                 if ((bool)Application.Current.Properties["isUpdating"] && (bool)Application.Current.Properties["isUpdatingFromFile"])
                 {
-                Application.Current.Properties["isCreatingLink"] = false;
-                updateFiles(25);
+                    Application.Current.Properties["isCreatingLink"] = false;
+                    updateFiles(25);
+
                 }
                 else if (!(bool)Application.Current.Properties["isUpdating"] && (bool)Application.Current.Properties["isUpdatingFromFile"])
                 {
+                    main_pb.Value = 20;
+
                     Application.Current.Properties["updatingPath"] = Application.Current.Properties["installingPath"];
                     updateFiles(17);
 
@@ -116,26 +124,29 @@ namespace DBaInstaller
                 }
                 else if ((bool)Application.Current.Properties["isUpdating"] && !(bool)Application.Current.Properties["isUpdatingFromFile"])
                 {
-                Application.Current.Properties["isCreatingLink"] = false;
+                    Application.Current.Properties["isCreatingLink"] = false;
 
                     main_pb.Value = 20;
                     status_t.Text = "Загрузка файла с сервера...";
 
-                    WebClient wc = new WebClient();
+                    WebClient wc = new();
                     wc.DownloadFile("https://github.com/maksimkh34/dba_cs_inst/blob/main/update.zrf?raw=true", "C:\\ProgramData\\DBa\\update.zrf");
+
                     Application.Current.Properties["updatingFilePath"] = "C:\\ProgramData\\DBa\\update.zrf";
 
                     updateFiles(20);
                     System.IO.File.Delete("C:\\ProgramData\\DBa\\update.zrf");
                     main_pb.Value = 100;
-                } else if (!(bool)Application.Current.Properties["isUpdating"] && !(bool)Application.Current.Properties["isUpdatingFromFile"])
+                }
+                else if (!(bool)Application.Current.Properties["isUpdating"] && !(bool)Application.Current.Properties["isUpdatingFromFile"])
                 {
+                    
                     main_pb.Value = 20;
                     status_t.Text = "Загрузка файла с сервера...";
-
+                    
                     WebClient wc = new WebClient();
                     wc.DownloadFile("https://github.com/maksimkh34/dba_cs_inst/blob/main/update.zrf?raw=true", "C:\\ProgramData\\DBa\\update.zrf");
-
+                    
                     Application.Current.Properties["updatingFilePath"] = "C:\\ProgramData\\DBa\\update.zrf";
                     Application.Current.Properties["updatingPath"] = Application.Current.Properties["installingPath"];
                     updateFiles(20);
@@ -152,14 +163,17 @@ namespace DBaInstaller
                     DBEncryption.writePassword(passSptd[0], passSptd[1]);
 
                     main_pb.Value = 100;
+                    
                 }
 
-                if((bool)Application.Current.Properties["isCreatingLink"])
+                if ((bool)Application.Current.Properties["isCreatingLink"])
                 {
                     Createlnk((string)Application.Current.Properties["updatingPath"] + "\\ZRDB.exe");
                 }
 
-            } catch (Exception e){
+            }
+            catch (Exception e)
+            {
                 MessageBox.Show($"Произошла неизвестная ошибка во время установки: {e}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 Application.Current.Shutdown();
             }
@@ -167,7 +181,7 @@ namespace DBaInstaller
             continueButton.IsEnabled = true;
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             install();
         }

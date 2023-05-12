@@ -10,12 +10,6 @@ namespace DBaInstaller
     {
         public MainWindow()
         {
-            if (!DBEncryption.isAdminRights())
-            {
-                MessageBoxResult res = MessageBox.Show("Пожалуйста, перезапустите установщик с правами администратора.", "Ошибка",
-                MessageBoxButton.OK, MessageBoxImage.Error);
-                Environment.Exit(-1);
-            }
             InitializeComponent();
         }
 
